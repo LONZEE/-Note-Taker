@@ -6,11 +6,11 @@ const sendFile = (res, file) => {
 };
 
 router.get('/', (req, res) => {
-  sendFile(res, 'index.html');
+  sendFile(res, '../public/index.html');
 });
 
 router.get('/notes', (req, res) => {
-  sendFile(res, 'notes.html');
+  sendFile(res, '../public/notes.html');
 });
 
 module.exports = router;
